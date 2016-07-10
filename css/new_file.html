@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<style type="text/css">
+		.box{
+			width: 105px;
+			height: 105px;
+			background: red;
+			margin: 100px auto;
+			position: relative;
+		}
+		.line{
+			position: absolute;
+			transition: 1s;
+		}
+		.box:hover .line-top{
+			width: 100%;
+		}
+		.line-top{
+			width: 0;
+			height: 5px;
+			background: blue;
+		}
+		.line-right{
+			width: 5px;
+			height: 100%;
+			top:-100%;
+			right: 0;
+			background: blueviolet;
+		}
+		.line-bottom{
+			width: 100%;
+			height: 5px;
+			right:-100%;
+			bottom: 0;
+			background: green;
+		}
+		.line-left{
+			width: 5px;
+			height: 100%;
+			bottom:-100%;
+			left: 0;
+			background: yellow;
+		}
+	</style>
+</head>
+<!--<script type="text/javascript">
+	window.onload = function (){
+		var box = document.getElementsByClassName('box')[0];
+		var span = document.getElementsByTagName('span');
+		box.onmouseover = function (){
+			span[0].style.left = 0;
+			span[1].style.top = 0;
+			span[2].style.right = 0;
+			span[3].style.bottom = 0;
+		}
+	}
+</script>-->
+<body>
+	<div class="box">
+		<span class="line line-top"></span>
+        <span class="line line-right"></span>
+        <span class="line line-bottom"></span>
+        <span class="line line-left"></span>
+	</div>
+</body>
+</html>

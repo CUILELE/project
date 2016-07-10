@@ -1,0 +1,211 @@
+.logo{
+	width: 100%;
+	height: 80px;
+	/*background: red;*/
+	z-index: 100;
+	position: fixed;
+	top:0;
+	left: 0;
+
+}
+.logo a{
+	padding: 30px;
+	padding-bottom: 0;
+}
+#breathe{
+	width: 106px;
+	height: 106px;
+	/*border: 3px solid red;*/
+	border-radius:50%;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	opacity: 0.1;
+	animation: ani 5s infinite;
+	box-shadow:-6px -6px 25px #999 ,6px 6px 25px #999;
+}
+
+@keyframes ani{
+	from{opacity: 0.1;}
+	50%{ opacity:   1; }  
+	to{opacity: 0.1;}
+}
+.relation{
+	width: 190px;
+	height: 30px;
+	line-height: 30px;
+	color: #3fb560;
+	margin: 20px 0 0 0;
+	position: fixed;
+	right: 0;
+	z-index: 101;
+}
+.relation_name{
+	width: 140px;
+	height: 30px;
+	background: #26272c;
+	color: #3fb560;
+	text-indent: 10px;
+	font-weight: bold;
+}
+.relation a:hover{
+	background:#468959;
+	color: white;
+	transition: 1s;
+}
+.focus{
+	width: 50px;
+	height: 155px;
+	position: fixed;
+	top: 38%;
+	right: 25px;
+	z-index: 5;
+}
+.focus_item{
+	width: 50px;
+	height: 120px;
+	margin-top: 9px;
+}
+.focus_item li{
+	width: 48px;
+	height: 22px;
+	margin-top: 6px;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+
+/*.line{
+	position: absolute;
+	transition: 0.5s;
+	background: green;
+}
+.line_top{
+	width: 100%;
+	height: 1px;
+	top:0;
+	left: -100%;
+}
+.line_right{
+	width: 1px;
+	height: 100%;
+	top:-100%;
+	right: 0;
+}
+.line_bottom{
+	width: 100%;
+	height: 1px;
+	right:-100%;
+	bottom: 0;
+}
+.line_left{
+	width: 1px;
+	height: 100%;
+	bottom:-100%;
+	left: 0;
+}*/
+
+
+.focus_item li a{
+	width: 21px;
+	height: 22px;
+	display: inline-block;
+}
+.qqpic{
+	background-position: 0 -19px;
+}
+.gui{
+	background-position: 1px -77px;
+}
+.fangkuai{
+	background-position: 1px -58px;
+}
+.weibo{
+	background-position: 1px -100px;
+}
+.saoma{
+	width: 90px;
+	height: 90px;
+	position: fixed;
+	bottom: 8%;
+	right: 20px;
+	z-index: 5;
+}
+.footer{
+	width: 100%;
+	height: 48px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	margin-left: 5px;
+}
+.footer_left{
+	height: 48px;
+	float: left;
+}
+.footer_left li{
+	float: left;
+	line-height:48px ;
+	margin-left: 15px;
+}
+.footer_left li a{
+	color: white;
+}
+.footer span{
+	line-height:48px;
+	height: 48px;
+	color: white;
+	font-size: 12px;
+	margin-right: 20px;
+}
+.nav_anlie{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	left: 0;
+	top: 10px;
+	z-index: 100;
+}
+.nav_anlie_item{
+	width: 540px;
+	height: 50px;
+	margin-left:-270px ;
+	position: absolute;
+	top: -50px;
+	left: 50%;
+}
+.nav_anlie_item li{
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	margin-right: 42px;
+}
+.nav_anlie_item li a{
+	color: white;
+	letter-spacing: 2px;
+}
+.nav_facos{
+	background: url(../img/in_nav_bg.jpg) no-repeat  0 bottom;
+}
+.nav_anlie_item li:hover{
+	background: url(../img/in_nav_bg.jpg) no-repeat  0 bottom;
+}
+.more_anlie{
+	padding: 13px 20px 20px;
+	color: white;
+	border: 2px solid #3fb560;
+	position: absolute;
+	left: 50%;
+	bottom:-200%;
+	margin-left: -40px;
+	background: url(../img/dwon_arrow.png) no-repeat center bottom;
+}
+.more_anlie:hover{
+	color: green;
+	transition: 1s;
+}
+.change{
+	font-size: 14px;
+	font-weight:bold ;
+}
